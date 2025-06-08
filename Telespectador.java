@@ -2,11 +2,11 @@ package Projetos_Final_CursoEmVideo;
 
 public class Telespectador extends Pessoa {
     private String login;
-    private int totalAssistido;
+    private int totalDeVideosAssistidos;
 
     public Telespectador(String nome, int idade, String sexo, String login){
         super(nome, idade, sexo);
-        this.totalAssistido = 0;
+        this.totalDeVideosAssistidos = 0;
     }
 
     public void assistiuUmVideo(){
@@ -22,11 +22,11 @@ public class Telespectador extends Pessoa {
     }
 
     public int getTotalAssistido() {
-        return totalAssistido;
+        return totalDeVideosAssistidos;
     }
 
     public void setTotalAssistido(int totalAssistido) {
-        this.totalAssistido = totalAssistido;
+        this.totalDeVideosAssistidos = totalAssistido;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class Telespectador extends Pessoa {
         return "nome = " + nome +
                 "; idade = " + idade +
                 "; sexo = " + sexo +
-                "; totalAssistido = " + totalAssistido +
+                "; totalAssistido = " + totalDeVideosAssistidos +
                 '\n';
     }
 }
